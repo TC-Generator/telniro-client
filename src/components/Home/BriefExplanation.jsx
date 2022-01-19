@@ -5,7 +5,7 @@ const BriefExplantion = () => {
   return (
     <Container className="">
       <div className="description">
-        اولین و بزرگترین ربات ساز تلگرام بر پایه MTProto
+        <span> تل نیرو ,</span> اولین و بزرگترین ربات ساز تلگرام بر پایه MTProto
       </div>
       <Link to="trial">تست رایگان</Link>
     </Container>

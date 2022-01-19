@@ -6,7 +6,7 @@ const Navbar = () => {
     <Container className="">
       <NavLink to="dashboard">داشبورد</NavLink>
       <NavLink to="login">ورود/عضویت</NavLink>
-      <NavLink to="order">سفارش</NavLink>
+      <NavLink to="orders">سفارشات</NavLink>
       <NavLink to="blog">بلاگ</NavLink>
     </Container>
   );
