@@ -16,10 +16,19 @@ import Notifications from "./pages/Nofitications";
 import Notification from "./pages/Notification";
 import Question from "./pages/Question";
 import Transactions from "./pages/Transactions";
+import { useEffect, useRef } from "react";
 
 function App() {
+  const AppRef = useRef();
+
+  useEffect(() => {
+    if (AppRef.current) {
+      AppRef.current.focus();
+    }
+  }, [AppRef]);
+
   return (
-    <div className="App">
+    <div className="App" ref={AppRef} tabIndex="1">
       <Switch>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
